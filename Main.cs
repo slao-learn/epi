@@ -7,6 +7,7 @@ class MainClass
     public static void Main(string[] args)
     {
 //        P5_1.RunTests();
-        P6_1.RunTests();
+//        P6_1.RunTests();
+        P6_7.RunTests();
     }
 }
