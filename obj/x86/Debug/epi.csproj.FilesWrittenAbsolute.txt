@@ -1,0 +1,8 @@
+/Users/seanlao/Desktop/transfer/epi/epi/bin/Debug/epi.exe.mdb
+/Users/seanlao/Desktop/transfer/epi/epi/bin/Debug/epi.exe
+/Users/seanlao/Desktop/transfer/epi/epi/obj/x86/Debug/epi.exe
+/Users/seanlao/Desktop/transfer/epi/epi/obj/x86/Debug/epi.exe.mdb
+/Users/seanlao/Desktop/transfer/study/epi/obj/x86/Debug/epi.exe
+/Users/seanlao/Desktop/transfer/study/epi/obj/x86/Debug/epi.exe.mdb
+/Users/seanlao/Desktop/transfer/study/epi/bin/Debug/epi.exe.mdb
+/Users/seanlao/Desktop/transfer/study/epi/bin/Debug/epi.exe
