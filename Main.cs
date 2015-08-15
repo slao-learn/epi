@@ -8,6 +8,7 @@ class MainClass
     {
 //        P5_1.RunTests();
 //        P6_1.RunTests();
-        P6_7.RunTests();
+//        P6_7.RunTests();
+        P7_1.RunTests();
     }
 }
