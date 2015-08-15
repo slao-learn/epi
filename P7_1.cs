@@ -6,23 +6,15 @@ public class P7_1
     {
         char[] arr = value.ToCharArray();
         int result = 0;
-        int place = 1;
+        bool isNeg = arr[0] == '-';
 
-        for (int i = value.Length - 1; i >= 0; --i)
+        for (int i = (isNeg ? 1 : 0); i < arr.Length; ++i)
         {
-            char c = arr[i];
-            if (i == 0 && c == '-')
-            {
-                result *= -1;
-            } else
-            {
-                int digit = c - '0';
-                result += digit * place;
-                place *= 10;
-            }
+            int digit = arr[i] - '0';
+            result = result * 10 + digit;
         }
 
-        return result;
+        return (isNeg ? -result : result);
     }
 
     private static string ParseInt(int value)
@@ -34,11 +26,10 @@ public class P7_1
         {
             return "0";
         }
-
         if (value < 0)
         {
             isNeg = true;
-            value *= -1;
+            value = -value;
         }
         while (value > 0)
         {
@@ -46,11 +37,7 @@ public class P7_1
             result = c + result;
             value /= 10;
         }
-        if (isNeg)
-        {
-            result = "-" + result;
-        }
-        return result;
+        return (isNeg ? "-" + result : result);
     }
 
     public static void RunTests()
