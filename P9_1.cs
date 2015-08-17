@@ -5,32 +5,44 @@ public class P9_1
 {
     private class MaxStack
     {
-        private class Data
+        private class MaxInfo
         {
             public int value;
-            public int maxValue;
+            public int count;
+
+            public MaxInfo(int value, int count)
+            {
+                this.value = value;
+                this.count = count;
+            }
         }
 
         private Stack stack;
+        private Stack maxStack;
 
         public MaxStack()
         {
             stack = new Stack();
+            maxStack = new Stack();
         }
 
         public void Push(int value)
         {
-            Data data = new Data();
-            data.value = value;
             if (stack.Count > 0)
             {
-                Data top = stack.Peek() as Data;
-                data.maxValue = Math.Max(top.maxValue, value);
+                MaxInfo topMax = maxStack.Peek() as MaxInfo;
+                if (topMax.value == value)
+                {
+                    ++topMax.count;
+                } else if (topMax.value < value)
+                {
+                    maxStack.Push(new MaxInfo(value, 1));
+                }
             } else
             {
-                data.maxValue = value;
+                maxStack.Push(new MaxInfo(value, 1));
             }
-            stack.Push(data);
+            stack.Push(value);
         }
 
         public int Pop()
@@ -39,8 +51,17 @@ public class P9_1
             {
                 throw new Exception("no element to pop");
             }
-            Data top = stack.Pop() as Data;
-            return top.value;
+            int top = Convert.ToInt32(stack.Pop());
+            MaxInfo topMax = maxStack.Peek() as MaxInfo;
+            if (topMax.value == top)
+            {
+                --topMax.count;
+                if (topMax.count == 0)
+                {
+                    maxStack.Pop();
+                }
+            }
+            return top;
         }
 
         public int Peek()
@@ -49,8 +70,7 @@ public class P9_1
             {
                 throw new Exception("no element to peek");
             }
-            Data top = stack.Peek() as Data;
-            return top.value;
+            return Convert.ToInt32(stack.Peek());
         }
 
         public int Max()
@@ -59,8 +79,8 @@ public class P9_1
             {
                 throw new Exception("no element in stack");
             }
-            Data top = stack.Peek() as Data;
-            return top.maxValue;
+            MaxInfo topMax = maxStack.Peek() as MaxInfo;
+            return topMax.value;
         }
     }
 
