@@ -44,6 +44,7 @@
     <Compile Include="P7_1.cs" />
     <Compile Include="P8_1.cs" />
     <Compile Include="P9_1.cs" />
+    <Compile Include="P10_1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
