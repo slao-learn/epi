@@ -53,6 +53,7 @@
     <Compile Include="P16_1.cs" />
     <Compile Include="P17_1.cs" />
     <Compile Include="P18_5.cs" />
+    <Compile Include="P19_2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
