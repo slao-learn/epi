@@ -69,6 +69,7 @@
     <Compile Include="P13_3.cs" />
     <Compile Include="P13_4.cs" />
     <Compile Include="P14_2.cs" />
+    <Compile Include="P15_3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
