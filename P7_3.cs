@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class P17_3
+public class P7_3
 {
     public static int GetInt(string code)
     {
