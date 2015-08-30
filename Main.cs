@@ -6,6 +6,6 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        P7_6.RunTests();
+        P8_5.RunTests();
     }
 }
