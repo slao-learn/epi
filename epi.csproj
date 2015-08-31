@@ -83,6 +83,7 @@
     <Compile Include="P7_6.cs" />
     <Compile Include="P8_5.cs" />
     <Compile Include="P8_8.cs" />
+    <Compile Include="P9_2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
