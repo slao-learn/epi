@@ -2,10 +2,13 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Diagnostics;
 
-class MainClass
+namespace epi
 {
-    public static void Main(string[] args)
+    class MainClass
     {
-        P9_10.RunTests();
+        public static void Main(string[] args)
+        {
+            P10_2.RunTests();
+        }
     }
 }
