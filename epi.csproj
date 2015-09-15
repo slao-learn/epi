@@ -87,6 +87,8 @@
     <Compile Include="P9_10.cs" />
     <Compile Include="P10_2.cs" />
     <Compile Include="P10_10.cs" />
+    <Compile Include="BinaryHeap.cs" />
+    <Compile Include="P11_3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
