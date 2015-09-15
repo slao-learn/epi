@@ -1,6 +1,6 @@
 using System;
 
-public class P6_1 : Problem
+public class P6_1
 {
     // Time complexity = O(n)
     // Space complexity = O(1)

@@ -1,6 +1,7 @@
 using System;
+using System.Diagnostics;
 
-public class P5_1 : Problem
+public class P5_1
 {
     private static readonly short[] precomputed_parity;
 
@@ -59,8 +60,6 @@ public class P5_1 : Problem
 
     public static void RunTests()
     {
-        Console.WriteLine(Problem.GetCurrentMethod());
-        Console.WriteLine();
         
         // Time complexity = O(n) where n is the width of the input value
         // Space complexity = O(1)
@@ -106,5 +105,13 @@ public class P5_1 : Problem
         PrintTime(() => { Console.WriteLine("Parity of 13 = {0}", P5_1.XorParity(13)); });
         PrintTime(() => { Console.WriteLine("Parity of 255 = {0}", P5_1.XorParity(255)); });
         PrintTime(() => { Console.WriteLine("Parity of 13490 = {0}", P5_1.XorParity(13490)); });
+    }
+
+    protected static void PrintTime(Action task)
+    {
+        TimeSpan begin = Process.GetCurrentProcess().TotalProcessorTime;
+        task();
+        TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
+        Console.WriteLine((end - begin).TotalMilliseconds + "ms");
     }
 }

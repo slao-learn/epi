@@ -1,6 +1,6 @@
 using System;
 
-public class P6_7 : Problem
+public class P6_7
 {
     private static int BuySellStock(int[] prices)
     {
