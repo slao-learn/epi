@@ -97,6 +97,7 @@
     <Compile Include="P16_3.cs" />
     <Compile Include="P17_3.cs" />
     <Compile Include="P17_6.cs" />
+    <Compile Include="P18_8.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
