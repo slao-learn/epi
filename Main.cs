@@ -8,7 +8,7 @@ namespace epi
     {
         public static void Main(string[] args)
         {
-            P8_11.RunTests();
+            P9_3.RunTests();
         }
     }
 }
