@@ -109,6 +109,7 @@
     <Compile Include="BTNode.cs" />
     <Compile Include="P11_5.cs" />
     <Compile Include="Util.cs" />
+    <Compile Include="P12_6.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
